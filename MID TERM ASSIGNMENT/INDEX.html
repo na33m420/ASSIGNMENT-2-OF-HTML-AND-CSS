@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #161633;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #161633;
+            /* border-radius: 8px; */
+            
+        }
+
+        div {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #16161b;
+            border-radius: 4px;
+            background-color: #201e29;
+            color: white;
+        }
+
+        #prsnlacc {
+            width: 5%;
+
+        }
+
+        #bsnisacc {
+            width: 5%;
+        }
+
+        #trmscndtn {
+            width: 5%;
+
+        }
+
+        .trmscondtn {
+            color: white;
+        }
+
+        #submitnow {
+            background-color: #32323d;
+            border: 1px solid white;
+            width: 40%;
+        }
+
+        hr {
+            color: rgb(75, 73, 73);
+            margin: 5%;
+        }
+
+        #known {
+            background-color: white;
+            color: black;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+    <div>
+    <p>Fill out the form with the required information</p>
+</div>
+    <form action="backend.php">
+        <div>Enter Your First Name:</div>
+        <input type="text" name="name">
+        <div>Enter Your Last Name:</div>
+        <input type="text" name="lastname">
+        <div>Enter Your Email:</div>
+        <input type="email" name="email">
+        <div>Create a New Password:</div>
+        <input type="password">
+        <hr>
+        <div>
+
+            <input type="checkbox" name="Personal Account" id="prsnlacc">
+            Personal Account:
+            <br>
+            <input type="checkbox" name="business Account" id="bsnisacc">
+            Business Account:
+            <br>
+            <input type="checkbox" name="agree" id="trmscndtn"> I accept the &nbsp; <a href="/screencapture-file--mid term assignment-html.png" target="_blank"
+                class="trmscondtn">terms and conditions</a>
+        </div>
+        <hr>
+        <div>
+            Upload a profile picture:
+            <input type="file" name="profilepicture">
+        </div>
+        <div>
+            Input your age (years):
+            <input type="number" name="age">
+        </div>
+        <hr>
+        <div>How did you hear about us?
+            <select name="about us" id="known">
+                <option value="" "selected">Select one</option>
+                <option value="youtube">Youtube</option>
+                <option value="facebook">Facebook</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            Provide a bio: <br>
+            <textarea name="bio" cols="30" rows="5" placeholder="i like coding on the beach"></textarea>
+        </div>
+
+
+        <input type="button" value="submit now" id="submitnow">
+
+
+
+    </form>
+</body>
+
+</html>
